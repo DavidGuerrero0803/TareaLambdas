@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class EjerciciosStaticLambdas {
 
@@ -29,5 +30,12 @@ public class EjerciciosStaticLambdas {
         cadena.removeIf(c -> c.startsWith(String.valueOf(letra)) || c.length() < n);
         System.out.println("=== FILTRO SELECTIVO ===");
         System.out.println(cadena);
+    }
+
+    public static ArrayList<String> conversorDeMayusculas(ArrayList<String> cadena) {
+       return cadena.stream()
+                .map(String::toUpperCase)
+                .collect(Collectors.toCollection(ArrayList::new));
+
     }
 }

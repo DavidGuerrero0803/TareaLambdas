@@ -17,5 +17,12 @@ public class Main {
         cadena.add("Agrio");
 
         EjerciciosStaticLambdas.filtradorSelectivo(cadena, 'A', 6);
+
+        ArrayList<String> cadena2 = new ArrayList<>();
+        cadena2.add("Manzana");
+        cadena2.add("Banana");
+        cadena2.add("Limón");
+        EjerciciosStaticLambdas.conversorDeMayusculas(cadena2);
+        System.out.println(cadena2);
     }
 }
