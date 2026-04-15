@@ -18,11 +18,12 @@ public class Main {
 
         EjerciciosStaticLambdas.filtradorSelectivo(cadena, 'A', 6);
 
+        // EJERCICIO 3.
         ArrayList<String> cadena2 = new ArrayList<>();
         cadena2.add("Manzana");
         cadena2.add("Banana");
         cadena2.add("Limón");
-        EjerciciosStaticLambdas.conversorDeMayusculas(cadena2);
-        System.out.println(cadena2);
+        ArrayList<String> cadenaMayus = EjerciciosStaticLambdas.conversorDeMayusculas(cadena2);
+        System.out.println(cadenaMayus);
     }
 }
