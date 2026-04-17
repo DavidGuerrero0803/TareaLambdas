@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Main {
@@ -41,5 +42,16 @@ public class Main {
         HashSet<Integer> resultado = EjerciciosStaticLambdas.obtenerCuadradosUnicos(numeros2);
         System.out.println("=== CUADRADOS ÚNICOS ===");
         System.out.println(resultado);
+
+        // EJERCICIO 5.
+        ArrayList<String> palabras = new ArrayList<>();
+        palabras.add("Java");
+        palabras.add("Java");
+        palabras.add("Stream");
+        palabras.add("Lambda");
+
+        HashMap<String, Integer> palabrasLongitud = EjerciciosStaticLambdas.generarMapaLongitudes(palabras);
+        System.out.println("=== MAPA DE LONGITUDES ===");
+        System.out.println(palabrasLongitud);
     }
 }
