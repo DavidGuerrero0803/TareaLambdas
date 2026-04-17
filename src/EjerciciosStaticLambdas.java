@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class EjerciciosStaticLambdas {
@@ -58,5 +59,21 @@ public class EjerciciosStaticLambdas {
                 .filter(n -> n % 2 == 0)
                 .map(n -> n * n)
                 .collect(Collectors.toCollection(HashSet::new));
+    }
+
+    /**
+     * generarMapaLongitudes() transforma una ArrayList de palabras en un mapa, en donde...
+     * Clave: La palabra misma. Valor: El número de caracteres (longitud).
+     * @param palabras (el ArrayList tipo String de palabras).
+     * @return HashMap con el resultado de las generaciones del mapa con longitudes.
+     */
+    public static HashMap<String, Integer> generarMapaLongitudes(ArrayList<String> palabras) {
+        return palabras.stream()
+                .collect(Collectors.toMap(
+                        p -> p,
+                        String::length,
+                        (valorExistente, nuevoValor) -> valorExistente,
+                        HashMap::new
+                ));
     }
 }
