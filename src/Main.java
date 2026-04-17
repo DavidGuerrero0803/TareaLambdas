@@ -63,5 +63,18 @@ public class Main {
 
         System.out.println("=== MODIFICADOR DE INVENTARIO ===");
         EjerciciosStaticLambdas.modificadorInventario(inventario);
+
+        // EJERCICIO 7.
+        ArrayList<String> palabras2 = new ArrayList<>();
+        palabras2.add("Rosa");
+        palabras2.add("Naranja");
+        palabras2.add("Amarillo");
+        palabras2.add("Amarillo");
+        palabras2.add("Amarillo");
+        palabras2.add("Verde");
+
+        HashMap<String, Integer> palabrasConFrecuencia = EjerciciosStaticLambdas.contadorFrecuencias(palabras2);
+        System.out.println("=== CONTADOR DE FRECUENCIAS ===");
+        System.out.println(palabrasConFrecuencia);
     }
 }

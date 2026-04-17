@@ -90,4 +90,20 @@ public class EjerciciosStaticLambdas {
                     producto, precio, precioConDescuento);
         });
     }
+
+    /**
+     * contadorFrecuencias() crea un mapa de frecuencias de palabras, de manera que:
+     * Si la palabra NO existe, se pone un 1.
+     * Si la palabra existe, se suma 1 al valor actual.
+     * @param palabras2 (ArrayList con palabras).
+     * @return (HashMap en donde la clave es la palabra y el valor su frecuencia).
+     */
+    public static HashMap<String, Integer> contadorFrecuencias(ArrayList<String> palabras2) {
+        HashMap<String, Integer> mapaFrecuencias = new HashMap<>();
+        for (String palabra : palabras2) {
+            mapaFrecuencias.merge(palabra, 1, (valorActual, nuevoValor) ->
+                    valorActual + nuevoValor);
+        }
+        return mapaFrecuencias;
+    }
 }
