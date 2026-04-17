@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class EjerciciosStaticLambdas {
@@ -8,7 +10,7 @@ public class EjerciciosStaticLambdas {
     //=======================================================================
 
     /**
-     * Este metodo estático pide un ArrayList de números y un factor de multiplicación,
+     * multiplicadorArrayList() estático pide un ArrayList de números y un factor de multiplicación,
      * el resultado de las multiplicaciones se mostrarán en pantalla.
      * @param numeros (el ArrayList con los números).
      * @param multiplicador (el factor por el que los vas a multiplicar).
@@ -20,7 +22,7 @@ public class EjerciciosStaticLambdas {
     }
 
     /**
-     * Este metodo estático pide una ArrayList de cadenas, un caracter para eliminar palabras
+     * filtradorSelectivo() pide una ArrayList de cadenas, un caracter para eliminar palabras
      * y una cantidad con la cual eliminar una cadena de n longitud.
      * @param cadena (el ArrayList que contiene cadenas de textos).
      * @param letra (el caracter con el cual borrar palabras que empiecen con él).
@@ -32,10 +34,29 @@ public class EjerciciosStaticLambdas {
         System.out.println(cadena);
     }
 
-    public static ArrayList<String> conversorDeMayusculas(ArrayList<String> cadena) {
-       return cadena.stream()
+    /**
+     * conversorDeMayusculas() se encarga de tomar un ArrayList de cadenas,
+     * para convertirlas todas en mayúscula y después regresar el resultado en un nuevo arreglo.
+     * @param cadena2 (el ArrayList que contiene cadenas de textos).
+     * @return ArrayList con las cadenas de texto convertidas a mayúscula.
+     */
+    public static ArrayList<String> conversorDeMayusculas(ArrayList<String> cadena2) {
+       return cadena2.stream()
                 .map(String::toUpperCase)
                 .collect(Collectors.toCollection(ArrayList::new));
 
+    }
+
+    /**
+     * obtenerCuadradosUnicos() se encarga de filtrar números pares que haya
+     * en un ArrayList con números, los eleva al cuadrado y los almacena en un HashSet.
+     * @param numeros2 (el ArrayList que contiene enteros duplicados).
+     * @return HashSet sin los duplicados y los pares multiplicados.
+     */
+    public static HashSet<Integer> obtenerCuadradosUnicos(ArrayList<Integer> numeros2) {
+        return numeros2.stream()
+                .filter(n -> n % 2 == 0)
+                .map(n -> n * n)
+                .collect(Collectors.toCollection(HashSet::new));
     }
 }

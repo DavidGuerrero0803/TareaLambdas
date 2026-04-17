@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +25,21 @@ public class Main {
         cadena2.add("Banana");
         cadena2.add("Limón");
         ArrayList<String> cadenaMayus = EjerciciosStaticLambdas.conversorDeMayusculas(cadena2);
+        System.out.println("=== CONVERSOR DE MAYÚSCULAS ===");
         System.out.println(cadenaMayus);
+
+        // EJERCICIO 4.
+        ArrayList<Integer> numeros2 = new ArrayList<>();
+        numeros2.add(1);
+        numeros2.add(2);
+        numeros2.add(2);
+        numeros2.add(3);
+        numeros2.add(4);
+        numeros2.add(4);
+        numeros2.add(5);
+
+        HashSet<Integer> resultado = EjerciciosStaticLambdas.obtenerCuadradosUnicos(numeros2);
+        System.out.println("=== CUADRADOS ÚNICOS ===");
+        System.out.println(resultado);
     }
 }
