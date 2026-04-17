@@ -20,25 +20,25 @@ public class EjerciciosStaticLambdas {
     }
 
     /**
-     * filtradorSelectivo() pide una ArrayList de cadenas, un caracter para eliminar palabras
+     * filtroSelectivo() pide una ArrayList de cadenas, un caracter para eliminar palabras
      * y una cantidad con la cual eliminar una cadena de n longitud.
      * @param cadena (el ArrayList que contiene cadenas de textos).
      * @param letra (el caracter con el cual borrar palabras que empiecen con él).
      * @param n (longitud de las palabras que se desean eliminar).
      */
-    public static void filtradorSelectivo(ArrayList<String> cadena, char letra, int n) {
+    public static void filtroSelectivo(ArrayList<String> cadena, char letra, int n) {
         cadena.removeIf(c -> c.startsWith(String.valueOf(letra)) || c.length() < n);
         System.out.println("=== FILTRO SELECTIVO ===");
         System.out.println(cadena);
     }
 
     /**
-     * conversorDeMayusculas() se encarga de tomar un ArrayList de cadenas,
+     * conversorMayusculas() se encarga de tomar un ArrayList de cadenas,
      * para convertirlas todas en mayúscula y después regresar el resultado en un nuevo arreglo.
      * @param cadena2 (el ArrayList que contiene cadenas de textos).
      * @return ArrayList con las cadenas de texto convertidas a mayúscula.
      */
-    public static ArrayList<String> conversorDeMayusculas(ArrayList<String> cadena2) {
+    public static ArrayList<String> conversorMayusculas(ArrayList<String> cadena2) {
        return cadena2.stream()
                 .map(String::toUpperCase)
                 .collect(Collectors.toCollection(ArrayList::new));

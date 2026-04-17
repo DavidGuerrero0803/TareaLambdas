@@ -23,14 +23,14 @@ public class Main {
         cadena.add("Amargo");
         cadena.add("Agrio");
 
-        EjerciciosStaticLambdas.filtradorSelectivo(cadena, 'A', 6);
+        EjerciciosStaticLambdas.filtroSelectivo(cadena, 'A', 6);
 
         // EJERCICIO 3.
         ArrayList<String> cadena2 = new ArrayList<>();
         cadena2.add("Manzana");
         cadena2.add("Banana");
         cadena2.add("Limón");
-        ArrayList<String> cadenaMayus = EjerciciosStaticLambdas.conversorDeMayusculas(cadena2);
+        ArrayList<String> cadenaMayus = EjerciciosStaticLambdas.conversorMayusculas(cadena2);
         System.out.println("=== CONVERSOR DE MAYÚSCULAS ===");
         System.out.println(cadenaMayus);
 
@@ -110,6 +110,7 @@ public class Main {
 
         int N = 20;
         EjerciciosStaticLambdas.topeFrecuencias(palabrasPopulares, N);
+        System.out.println("=== TOPE DE FRECUENCIAS ===");
         System.out.println("Ajuste con un tope de " + N + ": " + palabrasPopulares);
     }
 }
