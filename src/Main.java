@@ -88,5 +88,12 @@ public class Main {
         ArrayList<String> palabrasFrecuentes = EjerciciosStaticLambdas.clasificadorPalabras(mapaFrecuencias, 6);
         System.out.println("=== CLASIFICADOR DE PALABRAS ===");
         System.out.println(palabrasFrecuentes);
+
+        // EJERCICIO 9.
+        String frase = "Esta es una prueba de escritura de una frase relativamente larga más una extensión";
+
+        HashSet<String> palabrasGuardadas = EjerciciosStaticLambdas.deduplicacionPalabras(frase, 3);
+        System.out.println("=== DEDUPLICACIÓN DE PALABRAS ===");
+        System.out.println(palabrasGuardadas);
     }
 }

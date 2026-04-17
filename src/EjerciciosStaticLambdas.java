@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class EjerciciosStaticLambdas {
@@ -119,5 +116,21 @@ public class EjerciciosStaticLambdas {
                 .filter(m -> m.getValue() >= frecuencia)
                 .map(m -> m.getKey())
                 .collect(Collectors.toCollection(ArrayList::new));
+    }
+
+    /**
+     * deduplicacionPalabras() procesa una frase entera para extraer palabras únicas
+     * que cumplan con una longitud mínima, pasando toda la cadena a minúsculas.
+     * @param frase (cadena de texto).
+     * @param longitud (la longitud mínima que debe tener la palabra para no descartarla).
+     * @return HashSet con todas las palabras sin duplicar y que hayan cumplido la longitud.
+     */
+    public static HashSet<String> deduplicacionPalabras(String frase, int longitud) {
+        String[] palabras = frase.split(" ");
+
+        return Arrays.stream(palabras)
+                .filter(p -> p.length() >= longitud)
+                .map(String::toLowerCase)
+                .collect(Collectors.toCollection(HashSet::new));
     }
 }
