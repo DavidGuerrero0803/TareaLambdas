@@ -53,5 +53,15 @@ public class Main {
         HashMap<String, Integer> palabrasLongitud = EjerciciosStaticLambdas.generarMapaLongitudes(palabras);
         System.out.println("=== MAPA DE LONGITUDES ===");
         System.out.println(palabrasLongitud);
+
+        // EJERCICIO 6.
+        HashMap<String, Double> inventario = new HashMap<>();
+        inventario.put("Teclado", 45.0);
+        inventario.put("Monitor", 300.1);
+        inventario.put("Mouse", 25.5);
+        inventario.put("Headset", 40.8);
+
+        System.out.println("=== MODIFICADOR DE INVENTARIO ===");
+        EjerciciosStaticLambdas.modificadorInventario(inventario);
     }
 }

@@ -76,4 +76,18 @@ public class EjerciciosStaticLambdas {
                         HashMap::new
                 ));
     }
+
+    /**
+     * modificadorInventario() recorre un inventario, aplicando un 10%
+     * de descuento en el precio de los productos.
+     * @param inventario (HashMap que contiene como clave: producto y valor: precio)
+     */
+    public static void modificadorInventario(HashMap<String, Double> inventario) {
+        inventario.forEach((producto, precio) -> {
+            double descuentoAplicado = precio * 0.1;
+            double precioConDescuento = precio - descuentoAplicado;
+            System.out.printf("Producto: %s, Precio: %.2f, Precio con descuento: %.2f%n",
+                    producto, precio, precioConDescuento);
+        });
+    }
 }
