@@ -4,6 +4,11 @@ import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
+
+        //=======================================================================
+        //                         PRUEBAS DE EJECUCIÓN
+        //=======================================================================
+
         // EJERCICIO 1.
         ArrayList<Integer> numeros = new ArrayList<>();
         numeros.add(10);
@@ -95,5 +100,16 @@ public class Main {
         HashSet<String> palabrasGuardadas = EjerciciosStaticLambdas.deduplicacionPalabras(frase, 3);
         System.out.println("=== DEDUPLICACIÓN DE PALABRAS ===");
         System.out.println(palabrasGuardadas);
+
+        // EJERCICIO 10.
+        HashMap<String, Integer> palabrasPopulares = new HashMap<>();
+        palabrasPopulares.put("Hola", 25);
+        palabrasPopulares.put("Ok", 50);
+        palabrasPopulares.put("Adiós", 20);
+        palabrasPopulares.put("Taco", 8);
+
+        int N = 20;
+        EjerciciosStaticLambdas.topeFrecuencias(palabrasPopulares, N);
+        System.out.println("Ajuste con un tope de " + N + ": " + palabrasPopulares);
     }
 }

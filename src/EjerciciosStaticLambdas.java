@@ -133,4 +133,20 @@ public class EjerciciosStaticLambdas {
                 .map(String::toLowerCase)
                 .collect(Collectors.toCollection(HashSet::new));
     }
+
+    /**
+     * topeFrecuencias() ajusta todas las frecuencias de una palabra, es decir,
+     * si una frecuencia supera el valor tope (N), se reduce a N.
+     * @param mapaFrecuencias2 (HashMap que contiene de clave la palabra y la llave su "frecuencia").
+     * @param N (es el tope al que la frecuencia puede llegar).
+     */
+    public static void topeFrecuencias(HashMap<String, Integer> mapaFrecuencias2, int N) {
+        mapaFrecuencias2.replaceAll((palabra, frecuencia) -> {
+            if (frecuencia > N) {
+                return N;
+            } else {
+                return frecuencia;
+            }
+        });
+    }
 }
