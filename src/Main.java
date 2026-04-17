@@ -76,5 +76,17 @@ public class Main {
         HashMap<String, Integer> palabrasConFrecuencia = EjerciciosStaticLambdas.contadorFrecuencias(palabras2);
         System.out.println("=== CONTADOR DE FRECUENCIAS ===");
         System.out.println(palabrasConFrecuencia);
+
+        // EJERCICIO 8.
+        HashMap<String, Integer> mapaFrecuencias = new HashMap<>();
+        mapaFrecuencias.put("Uno", 1);
+        mapaFrecuencias.put("Cinco", 5);
+        mapaFrecuencias.put("Siete", 7);
+        mapaFrecuencias.put("Diez", 10);
+        mapaFrecuencias.put("Doce", 12);
+
+        ArrayList<String> palabrasFrecuentes = EjerciciosStaticLambdas.clasificadorPalabras(mapaFrecuencias, 6);
+        System.out.println("=== CLASIFICADOR DE PALABRAS ===");
+        System.out.println(palabrasFrecuentes);
     }
 }
