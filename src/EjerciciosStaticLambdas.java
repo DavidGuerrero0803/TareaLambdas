@@ -106,4 +106,18 @@ public class EjerciciosStaticLambdas {
         }
         return mapaFrecuencias;
     }
+
+    /**
+     * clasificadorPalabras() filtra las palabras cuya frecuencia sea mayor o igual al valor dado.
+     * @param mapaFrecuencias (HashMap que contiene con clave la palabra y la llave su "frecuencia").
+     * @param frecuencia (parámetro que filtrará las palabras que sobrepasen esa "frecuencia").
+     * @return solo los nombres de las palabras en un ArrayList.
+     */
+    public static ArrayList<String> clasificadorPalabras(HashMap<String, Integer> mapaFrecuencias, int frecuencia) {
+        return mapaFrecuencias.entrySet()
+                .stream()
+                .filter(m -> m.getValue() >= frecuencia)
+                .map(m -> m.getKey())
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
 }
