@@ -10,11 +10,18 @@ public class Main {
         //=======================================================================
 
         // EJERCICIO 1.
-        ArrayList<Integer> numeros = new ArrayList<>();
-        numeros.add(10);
-        numeros.add(20);
+        ArrayList<Integer> enteros = new ArrayList<>();
+        enteros.add(10);
+        enteros.add(20);
+        enteros.add(0);
+        enteros.add(null);
+        int factor = 3;
 
-        EjerciciosStaticLambdas.multiplicadorArrayList(numeros, 2);
+        System.out.println("=== #1 MULTIPLICADOR ===");
+        System.out.println("Enteros: " + enteros);
+        EjerciciosStaticLambdas.multiplicadorArrayList(enteros, factor);
+
+        System.out.println();
 
         // EJERCICIO 2.
         ArrayList<String> cadena = new ArrayList<>();

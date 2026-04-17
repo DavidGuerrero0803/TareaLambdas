@@ -15,9 +15,9 @@ public class EjerciciosStaticLambdas {
      */
     public static void multiplicadorArrayList(ArrayList<Integer> numeros, int multiplicador) {
         // La lambda toma cada número (n) y lo reemplaza por el resultado de n * multiplicador.
-        numeros.replaceAll(n -> n * multiplicador);
-        System.out.println("=== MULTIPLICADOR ===");
-        System.out.println(numeros);
+        // Para evitar un error usando "null", se hace uso de un operador ternario.
+        numeros.replaceAll(n -> (n == null) ? 0 : n * multiplicador);
+                System.out.println("Enteros afectados por un factor de " + multiplicador + ": " + numeros);
     }
 
     /**
