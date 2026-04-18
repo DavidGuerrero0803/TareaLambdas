@@ -16,6 +16,7 @@ public class EjerciciosStaticLambdas {
     public static void multiplicadorArrayList(ArrayList<Integer> numeros, int factor) {
         // La lambda toma cada número (n) y lo reemplaza por el resultado de n * multiplicador.
         // Para evitar un error usando "null", se hace uso de un operador ternario.
+        // Si es null, devolverá un 0, si no lo es, continuará con la multiplicación
         numeros.replaceAll(n -> (n == null) ? 0 : n * factor);
                 System.out.println("Enteros multiplicados por un factor de " + factor + ": " + numeros);
     }
