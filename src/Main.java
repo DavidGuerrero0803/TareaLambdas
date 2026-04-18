@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println("=== #1 MULTIPLICADOR ===");
         System.out.println("Enteros: " + enteros);
-        EjerciciosStaticLambdas.multiplicadorArrayList(enteros, factor);
+        EjerciciosStaticNumeros.multiplicadorArrayList(enteros, factor);
 
         System.out.println();
 
@@ -36,7 +36,7 @@ public class Main {
 
         System.out.println("=== #2 FILTRO SELECTIVO ===");
         System.out.println("Lista de sabores: " + sabores);
-        EjerciciosStaticLambdas.filtroSelectivo(sabores, 'S', longitudAEliminar);
+        EjerciciosStaticCadenas.filtroSelectivo(sabores, 'S', longitudAEliminar);
 
         System.out.println();
 
@@ -50,8 +50,8 @@ public class Main {
 
         System.out.println("=== #3 CONVERSOR DE MAYÚSCULAS ===");
         System.out.println("Listado de frutas: " + frutas);
-        ArrayList<String> frutasMayus = EjerciciosStaticLambdas.conversorMayusculas(frutas);
-        ArrayList<String> frutasVacia = EjerciciosStaticLambdas.conversorMayusculas(listaVaciaString);
+        ArrayList<String> frutasMayus = EjerciciosStaticCadenas.conversorMayusculas(frutas);
+        ArrayList<String> frutasVacia = EjerciciosStaticCadenas.conversorMayusculas(listaVaciaString);
         System.out.println("Listado en mayúsculas: " + frutasMayus);
         System.out.println("Listado en mayúsculas VACÍO: " + frutasVacia);
 
@@ -73,8 +73,8 @@ public class Main {
 
         System.out.println("=== #4 CUADRADOS ÚNICOS ===");
         System.out.println("Números repetidos: " + numerosRepetidos);
-        HashSet<Integer> resultadoCuadrados = EjerciciosStaticLambdas.cuadradosUnicos(numerosRepetidos);
-        HashSet<Integer> resultadoVacio = EjerciciosStaticLambdas.cuadradosUnicos(listaVaciaInt);
+        HashSet<Integer> resultadoCuadrados = EjerciciosStaticNumeros.cuadradosUnicos(numerosRepetidos);
+        HashSet<Integer> resultadoVacio = EjerciciosStaticNumeros.cuadradosUnicos(listaVaciaInt);
         System.out.println("Números pares al cuadrado y sin repetidos: " + resultadoCuadrados);
         System.out.println("Números VACÍOS: " + resultadoVacio);
 
@@ -91,8 +91,8 @@ public class Main {
 
         System.out.println("=== #5 MAPA DE LONGITUDES ===");
         System.out.println("Palabras usadas en programación (con repetidos): " + terminosProgramacion);
-        HashMap<String, Integer> palabrasLongitud = EjerciciosStaticLambdas.mapaLongitudes(terminosProgramacion);
-        HashMap<String, Integer> palabrasVacio = EjerciciosStaticLambdas.mapaLongitudes(listaVaciaString);
+        HashMap<String, Integer> palabrasLongitud = EjerciciosStaticCadenas.mapaLongitudes(terminosProgramacion);
+        HashMap<String, Integer> palabrasVacio = EjerciciosStaticCadenas.mapaLongitudes(listaVaciaString);
         System.out.println("Palabras con su longitud (sin repetidos): " + palabrasLongitud);
         System.out.println("Palabras VACÍAS: " + palabrasVacio);
 
@@ -107,9 +107,9 @@ public class Main {
         inventario.put("Nada", 0.0);
 
         System.out.println("=== #6 MODIFICADOR DE INVENTARIO ===");
-        EjerciciosStaticLambdas.modificadorInventario(inventario);
+        EjerciciosStaticNumeros.modificadorInventario(inventario);
         // Impresión de un mapa vacío.
-        EjerciciosStaticLambdas.modificadorInventario(new HashMap<>());
+        EjerciciosStaticNumeros.modificadorInventario(new HashMap<>());
 
         System.out.println();
 
@@ -125,8 +125,8 @@ public class Main {
 
         System.out.println("=== #7 CONTADOR DE FRECUENCIAS ===");
         System.out.println("Colores: " + colores);
-        HashMap<String, Integer> palabrasConFrecuencia = EjerciciosStaticLambdas.contadorFrecuencias(colores);
-        HashMap<String, Integer> palabrasConNada = EjerciciosStaticLambdas.contadorFrecuencias(listaVaciaString);
+        HashMap<String, Integer> palabrasConFrecuencia = EjerciciosStaticCadenas.contadorFrecuencias(colores);
+        HashMap<String, Integer> palabrasConNada = EjerciciosStaticCadenas.contadorFrecuencias(listaVaciaString);
         System.out.println("Existencia de colores (sin repetidos): " + palabrasConFrecuencia);
         System.out.println("Lista de colores VACÍA: " + palabrasConNada);
 
@@ -147,7 +147,7 @@ public class Main {
 
         System.out.println("=== #8 CLASIFICADOR DE PALABRAS ===");
         System.out.println("Mapa con números y frecuencias: " + mapaFrecuencias);
-        ArrayList<String> palabrasFrecuentes = EjerciciosStaticLambdas.clasificadorPalabras(mapaFrecuencias, frecuencia);
+        ArrayList<String> palabrasFrecuentes = EjerciciosStaticCadenas.clasificadorPalabras(mapaFrecuencias, frecuencia);
         System.out.println("Números que son de una frecuencia >=" + frecuencia + ": " + palabrasFrecuentes);
 
         System.out.println();
@@ -160,8 +160,8 @@ public class Main {
 
         System.out.println("=== #9 DEDUPLICACIÓN DE PALABRAS ===");
         System.out.println("Ejemplo de frase: " + frase);
-        HashSet<String> palabrasGuardadas = EjerciciosStaticLambdas.deduplicacionPalabras(frase, longitudMínima);
-        HashSet<String> palabrasSinGuardar = EjerciciosStaticLambdas.deduplicacionPalabras(vacio, longitudMínima);
+        HashSet<String> palabrasGuardadas = EjerciciosStaticCadenas.deduplicacionPalabras(frase, longitudMínima);
+        HashSet<String> palabrasSinGuardar = EjerciciosStaticCadenas.deduplicacionPalabras(vacio, longitudMínima);
         System.out.println("Palabras guardadas sin duplicados:" + palabrasGuardadas);
         System.out.println("Ejemplo de frase VACÍA: " + palabrasSinGuardar);
 
@@ -180,7 +180,7 @@ public class Main {
 
         System.out.println("=== #10 TOPE DE FRECUENCIAS ===");
         System.out.println("Palabras populares: " + palabrasPopulares);
-        EjerciciosStaticLambdas.topeFrecuencias(palabrasPopulares, tope);
+        EjerciciosStaticNumeros.topeFrecuencias(palabrasPopulares, tope);
         System.out.println("Palabras ajustadas a un tope de " + tope + ": " + palabrasPopulares);
     }
 }
