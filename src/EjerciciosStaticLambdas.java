@@ -17,7 +17,7 @@ public class EjerciciosStaticLambdas {
         // La lambda toma cada número (n) y lo reemplaza por el resultado de n * multiplicador.
         // Para evitar un error usando "null", se hace uso de un operador ternario.
         numeros.replaceAll(n -> (n == null) ? 0 : n * factor);
-                System.out.println("Enteros afectados por un factor de " + factor + ": " + numeros);
+                System.out.println("Enteros multiplicados por un factor de " + factor + ": " + numeros);
     }
 
     /**
