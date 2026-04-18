@@ -41,13 +41,19 @@ public class Main {
         System.out.println();
 
         // EJERCICIO 3.
-        ArrayList<String> cadena2 = new ArrayList<>();
-        cadena2.add("Manzana");
-        cadena2.add("Banana");
-        cadena2.add("Limón");
-        ArrayList<String> cadenaMayus = EjerciciosStaticLambdas.conversorMayusculas(cadena2);
+        ArrayList<String> frutas = new ArrayList<>();
+        frutas.add("Manzana");
+        frutas.add("Banana");
+        frutas.add("Limón");
+        frutas.add(null);
+        frutas.add("");
+
         System.out.println("=== CONVERSOR DE MAYÚSCULAS ===");
-        System.out.println(cadenaMayus);
+        System.out.println("Listado de frutas: " + frutas);
+        ArrayList<String> frutasMayus = EjerciciosStaticLambdas.conversorMayusculas(frutas);
+        System.out.println("Listado en mayúsculas: " + frutasMayus);
+
+        System.out.println();
 
         // EJERCICIO 4.
         ArrayList<Integer> numeros2 = new ArrayList<>();

@@ -45,7 +45,9 @@ public class EjerciciosStaticLambdas {
         // abriendo de paso el flujo.
        return cadena2.stream()
                  // Con map hace que cada String pase a su versión en mayúsculas.
-                .map(String::toUpperCase)
+                 // En caso de haber un null, no se intentará convertir y se evitará posibles errores.
+                 // Para esto, se utilizó un operador ternario.
+                .map(s -> (s == null) ? null : s.toUpperCase())
                  // El resultado de esta transformación se almacena en un nuevo ArrayList.
                 .collect(Collectors.toCollection(ArrayList::new));
 
