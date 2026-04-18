@@ -54,12 +54,12 @@ public class EjerciciosStaticLambdas {
     }
 
     /**
-     * obtenerCuadradosUnicos() se encarga de filtrar números pares que haya
+     * cuadradosUnicos() se encarga de filtrar números pares que haya
      * en un ArrayList con números, los eleva al cuadrado y los almacena en un HashSet.
      * @param numeros2 (el ArrayList que contiene enteros duplicados).
      * @return HashSet sin los duplicados y los pares multiplicados.
      */
-    public static HashSet<Integer> obtenerCuadradosUnicos(ArrayList<Integer> numeros2) {
+    public static HashSet<Integer> cuadradosUnicos(ArrayList<Integer> numeros2) {
         return numeros2.stream()
                 // Dentro del filter, se condiciona a que solo pasen números pares.
                 .filter(n -> n % 2 == 0)

@@ -42,32 +42,41 @@ public class Main {
 
         // EJERCICIO 3.
         ArrayList<String> frutas = new ArrayList<>();
+        ArrayList<String> listaVaciaString = new ArrayList<>();
         frutas.add("Manzana");
         frutas.add("Banana");
         frutas.add("Limón");
         frutas.add(null);
-        frutas.add("");
 
         System.out.println("=== CONVERSOR DE MAYÚSCULAS ===");
         System.out.println("Listado de frutas: " + frutas);
         ArrayList<String> frutasMayus = EjerciciosStaticLambdas.conversorMayusculas(frutas);
-        System.out.println("Listado en mayúsculas: " + frutasMayus);
+        ArrayList<String> frutasVacia = EjerciciosStaticLambdas.conversorMayusculas(listaVaciaString);
+        System.out.println("Listado en mayúsculas: " + frutasMayus + frutasVacia);
 
         System.out.println();
 
         // EJERCICIO 4.
-        ArrayList<Integer> numeros2 = new ArrayList<>();
-        numeros2.add(1);
-        numeros2.add(2);
-        numeros2.add(2);
-        numeros2.add(3);
-        numeros2.add(4);
-        numeros2.add(4);
-        numeros2.add(5);
+        ArrayList<Integer> numerosRepetidos = new ArrayList<>();
+        ArrayList<Integer> listaVaciaInt = new ArrayList<>();
+        numerosRepetidos.add(-2);
+        numerosRepetidos.add(0);
+        numerosRepetidos.add(1);
+        numerosRepetidos.add(1);
+        numerosRepetidos.add(2);
+        numerosRepetidos.add(2);
+        numerosRepetidos.add(3);
+        numerosRepetidos.add(4);
+        numerosRepetidos.add(4);
+        numerosRepetidos.add(5);
 
-        HashSet<Integer> resultado = EjerciciosStaticLambdas.obtenerCuadradosUnicos(numeros2);
         System.out.println("=== CUADRADOS ÚNICOS ===");
-        System.out.println(resultado);
+        System.out.println("Números repetidos: " + numerosRepetidos);
+        HashSet<Integer> resultadoCuadrados = EjerciciosStaticLambdas.cuadradosUnicos(numerosRepetidos);
+        HashSet<Integer> resultadoVacio = EjerciciosStaticLambdas.cuadradosUnicos(listaVaciaInt);
+        System.out.println("Números pares al cuadrado y sin repetidos: " + resultadoCuadrados + resultadoVacio);
+
+        System.out.println();
 
         // EJERCICIO 5.
         ArrayList<String> palabras = new ArrayList<>();
