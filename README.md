@@ -26,9 +26,9 @@ Para compilar y ejecutar los códigos, hace falta realizar lo siguiente:
 2. Compilar los archivos (mostraré a continuación una alternativa desde terminal): javac EjerciciosStaticNumeros.java EjerciciosStaticCadenas.java Main.java
 3. Ejecuta la clase Main. Para ver la demostración de los 10 métodos estáticos, debes ejecutar la clase Main así: java Main
 
-Las indicaciones sugirieron el uso de 2 clases, las cuales son las que recién se acaban de indicar..
+Las indicaciones solicitaron el uso de 2 clases + una clase Main, siendo estas:
 EjerciciosStaticLNumeros.java > Esta es la clase que contiene 4 métodos estáticos que están más relacionados a los números.
-EjerciciosStaticCadenas.java > En esta clase hay los otros 6 métodos estáticos, pero que estos están más ligados a cadenas.
+EjerciciosStaticCadenas.java > En esta clase están los otros 6 métodos estáticos, los cuales están más ligados a cadenas.
 Main.java > La clase principal de ejecución que inicializa todo y realiza las pruebas para mostrarlas en consola.
 
 Ejemplos de salida.
