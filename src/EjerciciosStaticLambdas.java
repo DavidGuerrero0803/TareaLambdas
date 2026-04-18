@@ -11,13 +11,13 @@ public class EjerciciosStaticLambdas {
      * multiplicadorArrayList() estático pide un ArrayList de números y un factor de multiplicación,
      * el resultado de las multiplicaciones se mostrarán en pantalla.
      * @param numeros (el ArrayList con los números).
-     * @param multiplicador (el factor por el que los vas a multiplicar).
+     * @param factor (el factor por el que se van a multiplicar los números).
      */
-    public static void multiplicadorArrayList(ArrayList<Integer> numeros, int multiplicador) {
+    public static void multiplicadorArrayList(ArrayList<Integer> numeros, int factor) {
         // La lambda toma cada número (n) y lo reemplaza por el resultado de n * multiplicador.
         // Para evitar un error usando "null", se hace uso de un operador ternario.
-        numeros.replaceAll(n -> (n == null) ? 0 : n * multiplicador);
-                System.out.println("Enteros afectados por un factor de " + multiplicador + ": " + numeros);
+        numeros.replaceAll(n -> (n == null) ? 0 : n * factor);
+                System.out.println("Enteros afectados por un factor de " + factor + ": " + numeros);
     }
 
     /**
