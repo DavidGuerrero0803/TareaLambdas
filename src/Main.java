@@ -104,41 +104,68 @@ public class Main {
         inventario.put("Monitor", 300.1);
         inventario.put("Mouse", 25.5);
         inventario.put("Headset", 40.8);
+        inventario.put("Nada", 0.0);
 
-        System.out.println("=== MODIFICADOR DE INVENTARIO ===");
+        System.out.println("=== #6 MODIFICADOR DE INVENTARIO ===");
         EjerciciosStaticLambdas.modificadorInventario(inventario);
+        // Impresión de un mapa vacío.
+        EjerciciosStaticLambdas.modificadorInventario(new HashMap<>());
+
+        System.out.println();
 
         // EJERCICIO 7.
-        ArrayList<String> palabras2 = new ArrayList<>();
-        palabras2.add("Rosa");
-        palabras2.add("Naranja");
-        palabras2.add("Amarillo");
-        palabras2.add("Amarillo");
-        palabras2.add("Amarillo");
-        palabras2.add("Verde");
+        ArrayList<String> colores = new ArrayList<>();
+        colores.add("Rosa");
+        colores.add("Naranja");
+        colores.add("Amarillo");
+        colores.add("Amarillo");
+        colores.add("Amarillo");
+        colores.add("Amarillo");
+        colores.add("Verde");
 
-        HashMap<String, Integer> palabrasConFrecuencia = EjerciciosStaticLambdas.contadorFrecuencias(palabras2);
-        System.out.println("=== CONTADOR DE FRECUENCIAS ===");
-        System.out.println(palabrasConFrecuencia);
+        System.out.println("=== #7 CONTADOR DE FRECUENCIAS ===");
+        System.out.println("Colores: " + colores);
+        HashMap<String, Integer> palabrasConFrecuencia = EjerciciosStaticLambdas.contadorFrecuencias(colores);
+        HashMap<String, Integer> palabrasConNada = EjerciciosStaticLambdas.contadorFrecuencias(listaVaciaString);
+        System.out.println("Existencia de colores (sin repetidos): " + palabrasConFrecuencia);
+        System.out.println("Lista de colores VACÍA: " + palabrasConNada);
+
+        System.out.println();
 
         // EJERCICIO 8.
         HashMap<String, Integer> mapaFrecuencias = new HashMap<>();
-        mapaFrecuencias.put("Uno", 1);
+        mapaFrecuencias.put("Cero", 0);
+        mapaFrecuencias.put("Uno", 3);
         mapaFrecuencias.put("Cinco", 5);
-        mapaFrecuencias.put("Siete", 7);
-        mapaFrecuencias.put("Diez", 10);
-        mapaFrecuencias.put("Doce", 12);
+        mapaFrecuencias.put("Siete", 5);
+        mapaFrecuencias.put("Diez", 4);
+        mapaFrecuencias.put("Dieciocho", 9);
+        mapaFrecuencias.put("Diecisiete", 10);
+        mapaFrecuencias.put("Cien", 100);
 
-        ArrayList<String> palabrasFrecuentes = EjerciciosStaticLambdas.clasificadorPalabras(mapaFrecuencias, 6);
-        System.out.println("=== CLASIFICADOR DE PALABRAS ===");
-        System.out.println(palabrasFrecuentes);
+        int frecuencia = 6;
+
+        System.out.println("=== #8 CLASIFICADOR DE PALABRAS ===");
+        System.out.println("Mapa con números y frecuencias: " + mapaFrecuencias);
+        ArrayList<String> palabrasFrecuentes = EjerciciosStaticLambdas.clasificadorPalabras(mapaFrecuencias, frecuencia);
+        System.out.println("Números que son de una frecuencia >=" + frecuencia + ": " + palabrasFrecuentes);
+
+        System.out.println();
 
         // EJERCICIO 9.
         String frase = "Esta es una prueba de escritura de una frase relativamente larga más una extensión";
+        String vacio = "";
 
-        HashSet<String> palabrasGuardadas = EjerciciosStaticLambdas.deduplicacionPalabras(frase, 3);
-        System.out.println("=== DEDUPLICACIÓN DE PALABRAS ===");
-        System.out.println(palabrasGuardadas);
+        int longitudMínima = 4;
+
+        System.out.println("=== #9 DEDUPLICACIÓN DE PALABRAS ===");
+        System.out.println("Ejemplo de frase: " + frase);
+        HashSet<String> palabrasGuardadas = EjerciciosStaticLambdas.deduplicacionPalabras(frase, longitudMínima);
+        HashSet<String> palabrasSinGuardar = EjerciciosStaticLambdas.deduplicacionPalabras(vacio, longitudMínima);
+        System.out.println("Palabras guardadas sin duplicados:" + palabrasGuardadas);
+        System.out.println("Ejemplo de frase VACÍA: " + palabrasSinGuardar);
+
+        System.out.println();
 
         // EJERCICIO 10.
         HashMap<String, Integer> palabrasPopulares = new HashMap<>();
