@@ -48,11 +48,12 @@ public class Main {
         frutas.add("Limón");
         frutas.add(null);
 
-        System.out.println("=== CONVERSOR DE MAYÚSCULAS ===");
+        System.out.println("=== #3 CONVERSOR DE MAYÚSCULAS ===");
         System.out.println("Listado de frutas: " + frutas);
         ArrayList<String> frutasMayus = EjerciciosStaticLambdas.conversorMayusculas(frutas);
         ArrayList<String> frutasVacia = EjerciciosStaticLambdas.conversorMayusculas(listaVaciaString);
-        System.out.println("Listado en mayúsculas: " + frutasMayus + frutasVacia);
+        System.out.println("Listado en mayúsculas: " + frutasMayus);
+        System.out.println("Listado en mayúsculas VACÍO: " + frutasVacia);
 
         System.out.println();
 
@@ -70,24 +71,32 @@ public class Main {
         numerosRepetidos.add(4);
         numerosRepetidos.add(5);
 
-        System.out.println("=== CUADRADOS ÚNICOS ===");
+        System.out.println("=== #4 CUADRADOS ÚNICOS ===");
         System.out.println("Números repetidos: " + numerosRepetidos);
         HashSet<Integer> resultadoCuadrados = EjerciciosStaticLambdas.cuadradosUnicos(numerosRepetidos);
         HashSet<Integer> resultadoVacio = EjerciciosStaticLambdas.cuadradosUnicos(listaVaciaInt);
-        System.out.println("Números pares al cuadrado y sin repetidos: " + resultadoCuadrados + resultadoVacio);
+        System.out.println("Números pares al cuadrado y sin repetidos: " + resultadoCuadrados);
+        System.out.println("Números VACÍOS: " + resultadoVacio);
 
         System.out.println();
 
         // EJERCICIO 5.
-        ArrayList<String> palabras = new ArrayList<>();
-        palabras.add("Java");
-        palabras.add("Java");
-        palabras.add("Stream");
-        palabras.add("Lambda");
+        ArrayList<String> terminosProgramacion = new ArrayList<>();
+        terminosProgramacion.add("Java");
+        terminosProgramacion.add("Java");
+        terminosProgramacion.add("Método");
+        terminosProgramacion.add("Stream");
+        terminosProgramacion.add("Lambda");
+        terminosProgramacion.add("Lambda");
 
-        HashMap<String, Integer> palabrasLongitud = EjerciciosStaticLambdas.generarMapaLongitudes(palabras);
-        System.out.println("=== MAPA DE LONGITUDES ===");
-        System.out.println(palabrasLongitud);
+        System.out.println("=== #5 MAPA DE LONGITUDES ===");
+        System.out.println("Palabras usadas en programación (con repetidos): " + terminosProgramacion);
+        HashMap<String, Integer> palabrasLongitud = EjerciciosStaticLambdas.mapaLongitudes(terminosProgramacion);
+        HashMap<String, Integer> palabrasVacio = EjerciciosStaticLambdas.mapaLongitudes(listaVaciaString);
+        System.out.println("Palabras con su longitud (sin repetidos): " + palabrasLongitud);
+        System.out.println("Palabras VACÍAS: " + palabrasVacio);
+
+        System.out.println();
 
         // EJERCICIO 6.
         HashMap<String, Double> inventario = new HashMap<>();

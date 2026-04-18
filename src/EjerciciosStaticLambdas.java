@@ -70,12 +70,12 @@ public class EjerciciosStaticLambdas {
     }
 
     /**
-     * generarMapaLongitudes() transforma una ArrayList de palabras en un mapa, en donde...
+     * mapaLongitudes() transforma una ArrayList de palabras en un mapa, en donde...
      * Clave: La palabra misma. Valor: El número de caracteres (longitud).
      * @param palabras (el ArrayList tipo String de palabras).
      * @return HashMap con el resultado de las generaciones del mapa con longitudes.
      */
-    public static HashMap<String, Integer> generarMapaLongitudes(ArrayList<String> palabras) {
+    public static HashMap<String, Integer> mapaLongitudes(ArrayList<String> palabras) {
         return palabras.stream()
                 // Dentro del toMap, se reciben dos lambdas.
                 .collect(Collectors.toMap(
