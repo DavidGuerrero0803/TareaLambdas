@@ -30,8 +30,8 @@ public class EjerciciosStaticLambdas {
     public static void filtroSelectivo(ArrayList<String> cadena, char letra, int n) {
         // La lambda actúa como condición, es decir, si devuelve true, el elemento se eliminará.
         cadena.removeIf(c -> c.startsWith(String.valueOf(letra)) || c.length() < n);
-        System.out.println("=== FILTRO SELECTIVO ===");
-        System.out.println(cadena);
+
+        System.out.println("Sabores que no empiezan con " + letra + " y no tienen longitud <" +n + ": "+ cadena);
     }
 
     /**

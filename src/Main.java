@@ -15,6 +15,7 @@ public class Main {
         enteros.add(20);
         enteros.add(0);
         enteros.add(null);
+
         int factor = 3;
 
         System.out.println("=== #1 MULTIPLICADOR ===");
@@ -24,13 +25,20 @@ public class Main {
         System.out.println();
 
         // EJERCICIO 2.
-        ArrayList<String> cadena = new ArrayList<>();
-        cadena.add("Dulce");
-        cadena.add("Salado");
-        cadena.add("Amargo");
-        cadena.add("Agrio");
+        ArrayList<String> sabores = new ArrayList<>();
+        sabores.add("Dulce");
+        sabores.add("Salado");
+        sabores.add("Amargo");
+        sabores.add("Agrio");
+        sabores.add("");
 
-        EjerciciosStaticLambdas.filtroSelectivo(cadena, 'A', 6);
+        int longitudAEliminar = 4;
+
+        System.out.println("=== #2 FILTRO SELECTIVO ===");
+        System.out.println("Lista de sabores: " + sabores);
+        EjerciciosStaticLambdas.filtroSelectivo(sabores, 'S', longitudAEliminar);
+
+        System.out.println();
 
         // EJERCICIO 3.
         ArrayList<String> cadena2 = new ArrayList<>();
