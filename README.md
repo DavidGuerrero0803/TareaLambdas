@@ -22,9 +22,9 @@ A continuación se mencionarán los 10 métodos y una breve descripción sobre l
 10. El Tope de Frecuencias: Ajusta los valores de un mapa de frecuencias para que ninguno supere un límite máximo N (el tope), al igual que el primero, se utilizó replaceAll.
 
 Para compilar y ejecutar los códigos, hace falta realizar lo siguiente:
-a. Clonar el repositorio: https://github.com/DavidGuerrero0803/TareaLambdas.git
-b. Compilar los archivos (mostraré a continuación una alternativa desde terminal): javac EjercicioStaticLambdas.java Main.java
-c. Ejecuta la clase Main. Para ver la demostración de los 10 métodos estáticos, debes ejecutar la clase Main así: java Main
+1. Clonar el repositorio: https://github.com/DavidGuerrero0803/TareaLambdas.git
+2. Compilar los archivos (mostraré a continuación una alternativa desde terminal): javac EjercicioStaticLambdas.java Main.java
+3. Ejecuta la clase Main. Para ver la demostración de los 10 métodos estáticos, debes ejecutar la clase Main así: java Main
 
 Las indicaciones sugirieron el uso de 2 clases, las cuales son las que recién se acaban de indicar..
 EjercicioStaticLambdas.java > Esta es la clase que contiene los 10 métodos estáticos y manejan toda la lógica solicitada.
@@ -33,6 +33,7 @@ Main.java > La clase principal de ejecución que inicializa todo y realiza las p
 Ejemplos de salida.
 
 Si se ejecutó la clase Main con éxito, deberían poder mirarse los próximos resultados:
+
 === #1 MULTIPLICADOR ===
 Enteros: [10, 20, 0, null]
 Enteros afectados por un factor de 3: [30, 60, 0, 0]
