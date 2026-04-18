@@ -1,10 +1,16 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Esta clase maneja métodos estáticos ligados con números.
+ *
+ * @author David Guerrero.
+ * @version 2.0.
+ */
 public class EjerciciosStaticNumeros {
 
     //=======================================================================
-    //                          MÉTODOS ESTÁTICOS
+    //                     MÉTODOS ESTÁTICOS (NÚMEROS)
     //=======================================================================
 
     /**

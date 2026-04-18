@@ -2,6 +2,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
+/**
+ * Clase Main donde se realizan las pruebas de ejecución con el fin de
+ * corroborar el correcto funcionamiento de los métodos estáticos
+ * que hay en las otras 2 clases.
+ *
+ * @author David Guerrero.
+ * @version 1.0.
+ */
 public class Main {
     public static void main(String[] args) {
 

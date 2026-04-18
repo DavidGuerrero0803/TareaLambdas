@@ -1,7 +1,18 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * Esta clase maneja métodos estáticos ligados a cadenas.
+ *
+ * @author David Guerrero.
+ * @version 2.0.
+ */
 public class EjerciciosStaticCadenas {
+
+    //=======================================================================
+    //                     MÉTODOS ESTÁTICOS (CADENAS)
+    //=======================================================================
+
     /**
      * filtroSelectivo() pide una ArrayList de cadenas, un caracter para eliminar palabras
      * y una cantidad con la cual eliminar una cadena de n longitud.
