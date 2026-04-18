@@ -35,29 +35,35 @@ Ejemplos de salida.
 Si se ejecutó la clase Main con éxito, deberían poder mirarse los próximos resultados:
 
 === #1 MULTIPLICADOR ===
+
 Enteros: [10, 20, 0, null]
 Enteros afectados por un factor de 3: [30, 60, 0, 0]
 
 === #2 FILTRO SELECTIVO ===
+
 Lista de sabores: [Dulce, Salado, Amargo, Agrio, ]
 Sabores que no empiezan con S y no tienen longitud <4: [Dulce, Amargo, Agrio]
 
 === #3 CONVERSOR DE MAYÚSCULAS ===
+
 Listado de frutas: [Manzana, Banana, Limón, null]
 Listado en mayúsculas: [MANZANA, BANANA, LIMÓN, null]
 Listado en mayúsculas VACÍO: []
 
 === #4 CUADRADOS ÚNICOS ===
+
 Números repetidos: [-2, 0, 1, 1, 2, 2, 3, 4, 4, 5]
 Números pares al cuadrado y sin repetidos: [0, 16, 4]
 Números VACÍOS: []
 
 === #5 MAPA DE LONGITUDES ===
+
 Palabras usadas en programación (con repetidos): [Java, Java, Método, Stream, Lambda, Lambda]
 Palabras con su longitud (sin repetidos): {Java=4, Stream=6, Método=6, Lambda=6}
 Palabras VACÍAS: {}
 
 === #6 MODIFICADOR DE INVENTARIO ===
+
 Producto: Headset, Precio: 40.80, Precio con descuento: 36.72
 Producto: Monitor, Precio: 300.10, Precio con descuento: 270.09
 Producto: Mouse, Precio: 25.50, Precio con descuento: 22.95
@@ -65,15 +71,18 @@ Producto: Nada, Precio: 0.00, Precio con descuento: 0.00
 Producto: Teclado, Precio: 45.00, Precio con descuento: 40.50
 
 === #7 CONTADOR DE FRECUENCIAS ===
+
 Colores: [Rosa, Naranja, Amarillo, Amarillo, Amarillo, Amarillo, Verde]
 Existencia de colores (sin repetidos): {Amarillo=4, Naranja=1, Rosa=1, Verde=1}
 Lista de colores VACÍA: {}
 
 === #8 CLASIFICADOR DE PALABRAS ===
+
 Mapa con números y frecuencias: {Cero=0, Siete=5, Cinco=5, Uno=3, Dieciocho=9, Diez=4, Diecisiete=10, Cien=100}
 Números que son de una frecuencia >=6: [Dieciocho, Diecisiete, Cien]
 
 === #9 DEDUPLICACIÓN DE PALABRAS ===
+
 Ejemplo de frase: Esta es una prueba de escritura de una frase relativamente larga más una extensión
 Palabras guardadas sin duplicados:[esta, frase, extensión, larga, prueba, escritura, relativamente]
 Ejemplo de frase VACÍA: []
