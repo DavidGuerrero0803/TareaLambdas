@@ -173,10 +173,14 @@ public class Main {
         palabrasPopulares.put("Ok", 50);
         palabrasPopulares.put("Adiós", 20);
         palabrasPopulares.put("Taco", 8);
+        palabrasPopulares.put("Nada", 0);
+        palabrasPopulares.put("Todo", 100);
 
-        int N = 20;
-        EjerciciosStaticLambdas.topeFrecuencias(palabrasPopulares, N);
-        System.out.println("=== TOPE DE FRECUENCIAS ===");
-        System.out.println("Ajuste con un tope de " + N + ": " + palabrasPopulares);
+        int tope = 20;
+
+        System.out.println("=== #10 TOPE DE FRECUENCIAS ===");
+        System.out.println("Palabras populares: " + palabrasPopulares);
+        EjerciciosStaticLambdas.topeFrecuencias(palabrasPopulares, tope);
+        System.out.println("Palabras ajustadas a un tope de " + tope + ": " + palabrasPopulares);
     }
 }
